@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    @apply bg-slate-50;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-montserrat font-medium tracking-tight text-gray-700;
+  }
+  p {
+    @apply font-openSans text-sm tracking-tight text-gray-800;
+  }
+
+  h1 {
+    @apply text-7xl;
+  }
+  h2 {
+    @apply text-6xl;
+  }
+  h3 {
+    @apply text-5xl;
+  }
+  h4 {
+    @apply text-4xl;
+  }
+  h5 {
+    @apply text-3xl;
+  }
+  h6 {
+    @apply text-xl leading-tight;
+  }
+}
+
+@layer components {
+  /*! shared styles */
+  .padding-to-all {
+    @apply px-8 py-6;
+
+    @apply md:px-12 md:py-6; /* Medium screens and above */
+    @apply lg:px-24 lg:py-8; /* Large screens and above */
+    @apply xl:py-10 2xl:px-32; /* Extra-large screens and above */
+  }
+
+  .card-div-responsiveness {
+    @apply flex flex-wrap gap-10 md:gap-10 lg:gap-16;
+  }
+
+  .hide-image {
+    @apply hidden md:block;
+  }
+
+  /*! extra fonts */
+  .sublabel {
+    @apply text-lg;
+  }
+
+  .landing-header-title {
+    @apply font-semibold;
+  }
+
+  .footer-text {
+    @apply text-center text-sm;
+  }
+
+  /*! sections */
+  .landing-container {
+    @apply flex flex-col justify-center gap-12 py-12 lg:py-20;
+  }
+
+  /*! buttons */
+  .btn-primary {
+    @apply flex w-fit items-center justify-center gap-2 rounded-3xl bg-mainGreen px-6 py-2 font-montserrat font-semibold text-white shadow-md hover:bg-mainGreenHover hover:shadow-lg focus:bg-darkGreen active:bg-darkGreen;
+  }
+  .btn-secondary {
+    @apply flex w-fit items-center justify-center gap-2 rounded-3xl bg-white px-6 py-2 font-montserrat font-semibold text-mainGreen shadow-md hover:bg-slate-50 hover:shadow-lg;
+  }
+
+  .btn-textOnly {
+    @apply p-0 font-montserrat text-sm font-semibold;
+  }
+
+  /*! cards */
+  .cardVariantOne {
+    @apply flex rounded-lg p-4 outline outline-4 outline-white;
+  }
+
+  .cardVariantTwo {
+    @apply grid justify-center gap-3 rounded-lg px-6 py-4 shadow-2xl;
+  }
+
+  .cardVariantThree {
+    @apply flex w-64 flex-col justify-center rounded-lg p-6;
+  }
+  .cardVariantFour {
+    @apply grid rounded-lg bg-white px-6 py-4 shadow-xl;
+  }
+
+  .cardVariantGreen {
+    @apply gap-4 rounded-xl bg-lightGreen px-10 py-8;
+  }
+
+  .cardsample {
+    @apply flex gap-0 bg-slate-300;
+  }
+}

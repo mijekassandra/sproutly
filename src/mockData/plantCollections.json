@@ -1,0 +1,23 @@
+{
+    "plantCollections": [
+      {
+        "image": "src\\assets\\african-mask-plant-pot.png",
+        "label": "African Mask Plant",
+        "subLabel": "Alocasia × amazonica",
+        "price": 380
+      },
+      {
+        "image": "src\\assets\\peace-lily.png",
+        "label": "Peace Lily",
+        "subLabel": "Spathiphyllum",
+        "price": 540
+      },
+      {
+        "image": "src\\assets\\snake-plant.png",
+        "label": "Snake Plant",
+        "subLabel": "Sansevieria trifasciata",
+        "price": 250
+      }
+    ]
+  }
+  
